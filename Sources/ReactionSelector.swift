@@ -134,15 +134,15 @@ public final class ReactionSelector: UIReactionControl {
     let backgroundPath   = UIBezierPath(roundedRect: backgroundBounds, cornerRadius: backgroundBounds.height / 2).cgPath
 
     CATransaction.begin()
-    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+    CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
     CATransaction.setCompletionBlock { [weak self] in
       self?.backgroundLayer.path = backgroundPath
     }
 
     let pathAnimation = CABasicAnimation(keyPath: "path").build {
-      $0.toValue               = backgroundPath
-      $0.fillMode              = kCAFillModeBoth
-      $0.isRemovedOnCompletion = false
+        $0.toValue               = backgroundPath
+        $0.fillMode              = CAMediaTimingFillMode.both
+        $0.isRemovedOnCompletion = false
     }
 
     backgroundLayer.add(pathAnimation, forKey: "morhingPath")

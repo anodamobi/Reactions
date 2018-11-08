@@ -39,7 +39,6 @@
 		CE6C881A1DD1DD7500ED6864 /* ReactionSummaryLocalizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = CE6C881C1DD1DD7500ED6864 /* ReactionSummaryLocalizable.stringsdict */; };
 		CE712DB4212B261400649B5A /* ReactionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE712DB3212B261400649B5A /* ReactionCellView.swift */; };
 		CE83F88E1DA8F033000943AB /* Reactions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE83F88C1DA8F033000943AB /* Reactions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE83F8911DA8F033000943AB /* Reactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83F88A1DA8F033000943AB /* Reactions.framework */; };
 		CE83F8921DA8F033000943AB /* Reactions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE83F88A1DA8F033000943AB /* Reactions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE83F8971DA8F04D000943AB /* FeedbackLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED9D95C1DA835DB00A70C2D /* FeedbackLocalizable.strings */; };
 		CE83F8981DA8F050000943AB /* FacebookReactionLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED9D95F1DA835DF00A70C2D /* FacebookReactionLocalizable.strings */; };
@@ -194,7 +193,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE83F8911DA8F033000943AB /* Reactions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +650,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Reactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -675,7 +673,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.Reactions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -837,7 +835,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -851,7 +849,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yannickloriot.ReactionsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
